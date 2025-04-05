@@ -1,19 +1,24 @@
 project:
   type: website
-
+  output-dir: _site
+  
 website:
-  title: "CHQ_Report_W-Tba4YQG"
+  title: "Your Website Title"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
 
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+# GitHub Pages specific settings
+execute:
+  freeze: auto
+
+# Publish configuration
+publish:
+  - id: gh-pages
+    url: https://twentyandchange.github.io/CHQ_Report_W-Tba4YQG/
+    provider: quarto-pub
 
 
 
