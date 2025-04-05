@@ -1,5 +1,5 @@
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual triggering from Actions tab
   push:
     branches: main
 
@@ -9,40 +9,39 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Needed to push to gh-pages branch
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        # No specific version, installs latest
 
       - name: Install R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.4.0'
-          
-                # Add this step to restore packages using renv
-      - name: Restore renv packages
-        shell: Rscript {0}
-        run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-          renv::restore()
+          r-version: '4.4.0' # Specify desired R version
 
+      # This step installs system libraries needed by some R packages (like sf, terra)
+      # Keep it if your project uses packages that need these
       - name: Install system dependencies
-        if: runner.os == 'Linux'
+        if: runner.os == 'Linux' # Only run on Linux runners
         run: |
           sudo apt-get update -y
           sudo apt-get install -y libgdal-dev libproj-dev libgeos-dev libudunits2-dev
 
-      - name: Install R Dependencies
+      # Use the standard setup-renv action to restore packages and cache them
+      # This replaces the manual 'Restore renv packages' step
+      - name: Install and cache R dependencies via renv
         uses: r-lib/actions/setup-renv@v2
         with:
-          cache-version: 1
+          cache-version: 1 # Increment cache version if you need to force a cache refresh
 
+      # Now render and publish using the restored R environment
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: gh-pages
+          target: gh-pages # Publish to the gh-pages branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the automatically generated token
