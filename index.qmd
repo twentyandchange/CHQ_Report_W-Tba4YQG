@@ -27,7 +27,7 @@ execute:
 library(readxl)
 
 # Import your Excel file
-combined_results <- read_excel("E:/EMS_calls/News_searches/News_search_results/Combined_results.xlsx", 
+combined_results <- read_excel("E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/Combined_results.xlsx", 
                                sheet = "Sheet1",  # Specify sheet name or number
                                range = NULL,      # Optional: specific cell range
                                col_names = TRUE)  # First row contains column names
@@ -66,7 +66,7 @@ library(sf)
 library(leaflet)
 
 # Example: Read a GeoJSON file (replace with your data)
-shapefile <- st_read("E:/EMS_calls/News_searches/QGIS_files/output_points.shp", quiet = TRUE)
+shapefile <- st_read("E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/output_points.shp", quiet = TRUE)
 
 # Create an interactive Leaflet map with popups
 leaflet() %>%
