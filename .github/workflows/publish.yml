@@ -21,6 +21,13 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.4.0'
+          
+                # Add this step to restore packages using renv
+      - name: Restore renv packages
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
 
       - name: Install system dependencies
         if: runner.os == 'Linux'
