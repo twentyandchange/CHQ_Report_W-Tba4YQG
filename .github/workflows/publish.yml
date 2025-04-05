@@ -35,7 +35,10 @@ jobs:
       - name: Install gert package
         shell: Rscript {0}
         run: |
-          if (!requireNamespace("gert", quietly = TRUE)) install.packages("gert")
+if (!requireNamespace("gert", quietly = TRUE))
+  install.packages("gert", lib = .libPaths()[1], repos = "https://cloud.r-project.org")
+
+
 
       # Use the standard setup-renv action. It should now find gert already
       # installed and proceed to restore other packages from renv.lock.

@@ -1,6 +1,6 @@
-# --- Place this in your .Rprofile ---
-
-library(gert)
+if (requireNamespace("gert", quietly = TRUE)) {
+  library(gert)
+}
 
 # Auto-commit function using gert
 auto_commit_gert <- function(commit_message = "Auto-update from RStudio [gert]",
