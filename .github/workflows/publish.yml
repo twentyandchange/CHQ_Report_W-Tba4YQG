@@ -22,6 +22,12 @@ jobs:
         with:
           r-version: '4.4.0'
 
+      - name: Install system dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y libgdal-dev libproj-dev libgeos-dev libudunits2-dev
+
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:
@@ -33,9 +39,3 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
- 
-     - name: Install system dependencies
-        if: runner.os == 'Linux'
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y libgdal-dev libproj-dev libgeos-dev libudunits2-dev
