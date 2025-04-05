@@ -16,32 +16,38 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        # No specific version, installs latest
 
       - name: Install R
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.4.0' # Specify desired R version
 
-      # This step installs system libraries needed by some R packages (like sf, terra)
-      # Keep it if your project uses packages that need these
+      # Install system dependencies (keep if needed)
       - name: Install system dependencies
-        if: runner.os == 'Linux' # Only run on Linux runners
+        if: runner.os == 'Linux'
         run: |
           sudo apt-get update -y
           sudo apt-get install -y libgdal-dev libproj-dev libgeos-dev libudunits2-dev
 
-      # Use the standard setup-renv action to restore packages and cache them
-      # This replaces the manual 'Restore renv packages' step
+      # *** NEW STEP ***
+      # Install gert explicitly BEFORE setup-renv runs,
+      # so it's available if .Rprofile is sourced by setup-renv's R process.
+      - name: Install gert package
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("gert", quietly = TRUE)) install.packages("gert")
+
+      # Use the standard setup-renv action. It should now find gert already
+      # installed and proceed to restore other packages from renv.lock.
       - name: Install and cache R dependencies via renv
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1 # Increment cache version if you need to force a cache refresh
 
-      # Now render and publish using the restored R environment
+      # Render and publish step
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: gh-pages # Publish to the gh-pages branch
+          target: gh-pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the automatically generated token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
