@@ -10,13 +10,6 @@ warning: false
 execute:
   warning: false
   message: false
-  website:
-  title: "The CHQ Drug and Overdose Report - NOT FOR CIRCULATION"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
 ---
 
 #### A summary compilation of reported drug-related arrests and of possible overdose EMS dispatches over the past 7 days.
