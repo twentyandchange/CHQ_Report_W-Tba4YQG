@@ -85,49 +85,33 @@ tryCatch({
   log_message(paste("Found quarto executable at:", ifelse(quarto_path=="", "NOT FOUND", quarto_path)))
   if (nchar(quarto_path) == 0) { log_message("!!! Quarto not found in PATH. Check environment variables for task user.")}
   
-  quarto_exe_full_path <- Sys.which("quarto") # Get the full path found earlier
-  log_message(paste("Attempting Quarto render via system2 using:", quarto_exe_full_path))
-  render_args <- c("render", qmd_file)
+  quarto_exe_full_path <- Sys.which("quarto")
+  # Ensure paths and arguments are quoted correctly for the shell command line
+  # Use shQuote for robustness, especially if paths might contain spaces
+  render_cmd <- paste(shQuote(quarto_exe_full_path), "render", shQuote(qmd_file)) 
+  log_message(paste("Attempting Quarto render via shell() with command:", render_cmd))
   
-  # Execute and capture output/error streams
-  quarto_result <- system2(
-    command = quarto_exe_full_path,
-    args = render_args,
-    stdout = TRUE,  # Capture standard output
-    stderr = TRUE   # Capture standard error
-  )
+  # Execute using shell() - stdout/stderr might go directly to the Task Scheduler output/log 
+  # or the R script's main log file depending on redirection setup. 
+  # We might lose the detailed Quarto output capture here compared to system2,
+  # but the primary goal is to see if we get a clean exit status.
+  exit_status <- shell(render_cmd) 
+  log_message(paste("Quarto CLI exit status via shell():", exit_status))
   
-  # Check the exit status attribute
-  exit_status <- attr(quarto_result, "status")
-  # Log exit status regardless of value for debugging
-  log_message(paste("Quarto CLI exit status:", ifelse(is.null(exit_status), "NULL (execution failed?)", exit_status)))
-  
-  # Log captured stdout/stderr
-  if(length(quarto_result) > 0 && any(nzchar(quarto_result))) {
-    log_message("Quarto CLI stdout/stderr:")
-    # The output is a character vector, print each line
-    for(line in quarto_result) { log_message(paste("  [Output]", line)) }
+  # shell() returns 0 for success on Windows
+  if (exit_status != 0) {
+    stop(paste("Quarto CLI failed via shell() with exit status:", exit_status))
   } else {
-    log_message("Quarto CLI stdout/stderr: (empty)")
-  }
-  
-  # Check for failure based on exit status
-  if (!is.null(exit_status) && exit_status != 0) {
-    # Throw an error with the exit status to be caught by the main tryCatch
-    stop(paste("Quarto CLI failed with exit status:", exit_status, "- see stdout/stderr logs above."))
-  } else if (is.null(exit_status)) {
-    # This case indicates system2 itself might have failed to run the command
-    stop("Failed to get exit status from Quarto CLI execution (system2 failure?).")
-  } else {
-    # Only log success if exit_status is explicitly 0
-    log_message("Quarto render via system2 appears successful (exit status 0).")
-    # Check if the output file was actually created/updated
-    output_exists <- file.exists(output_files[1]) # Check first expected output
-    log_message(paste("Checking if expected output exists:", output_exists)) 
+    log_message("Quarto render via shell() appears successful (exit status 0).")
+    # Check if the output file exists (using the corrected path)
+    # Ensure this variable is defined correctly in the config section above!
+    # corrected_output_path <- "_site/index.html" 
+    output_exists <- file.exists(output_files) # Use the output_files variable directly
+    log_message(paste("Checking if expected output exists at", shQuote(output_files), ":", output_exists)) 
     if (!output_exists) {
-      log_message("!!! WARNING: Quarto exited successfully but expected output file not found!")
+      log_message(paste("!!! WARNING: Quarto exited successfully but expected output file", shQuote(output_files), "not found!"))
       # Optionally treat this as an error:
-      # stop("Quarto exited successfully but expected output file not found!")
+      # stop("Quarto exited successfully but expected output file not found!") 
     }
   }
   log_message("quarto::quarto_render call completed.")
