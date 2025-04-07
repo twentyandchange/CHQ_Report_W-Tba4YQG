@@ -5,9 +5,7 @@ renv/
 .RData
 .Ruserdata/
 
-# Quarto Output / Cache (Let GitHub Action handle _site)
-_site/
-_freeze/
+
 
 # Logs
 *.log
@@ -20,6 +18,3 @@ Thumbs.db
 # Excel temp files (optional)
 ~*.xlsx
 
-# Add other project-specific temp/output files if necessary
-
-/.quarto/
