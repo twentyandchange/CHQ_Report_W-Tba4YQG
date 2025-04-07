@@ -143,3 +143,73 @@
 2025-04-06 21:41:09.430197 - Test write SUCCESSFUL. 
 2025-04-06 21:41:09.450042 - Using Quarto executable at: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
 2025-04-06 21:41:09.46976 - Attempting Quarto render via system2 using: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-04-06 21:41:21.904831 - Quarto CLI exit status: NULL (execution may still have succeeded) 
+2025-04-06 21:41:21.925388 - Quarto CLI stdout/stderr: 
+2025-04-06 21:41:21.946475 -   [Output] Linking to libgit2 v1.7.2, ssh support: YES 
+2025-04-06 21:41:21.964138 -   [Output] Global config: C:\Users\stevek\.gitconfig 
+2025-04-06 21:41:21.9826 -   [Output] System config: C:/Program Files/Git/etc/gitconfig 
+2025-04-06 21:41:22.00109 -   [Output] Default user: twentyandchange <twentyandchange@gmail.com> 
+2025-04-06 21:41:22.020155 -   [Output]  
+2025-04-06 21:41:22.037686 -   [Output]  
+2025-04-06 21:41:22.055757 -   [Output] processing file: index.qmd 
+2025-04-06 21:41:22.075986 -   [Output] 1/7                   
+2025-04-06 21:41:22.094774 -   [Output] 2/7 [unnamed-chunk-1] 
+2025-04-06 21:41:22.113453 -   [Output] 3/7                   
+2025-04-06 21:41:22.132291 -   [Output] 4/7 [unnamed-chunk-2] 
+2025-04-06 21:41:22.151612 -   [Output] 5/7                   
+2025-04-06 21:41:22.170372 -   [Output] 6/7 [unnamed-chunk-3] 
+2025-04-06 21:41:22.18892 -   [Output] 7/7                   
+2025-04-06 21:41:22.206592 -   [Output] output file: index.knit.md 
+2025-04-06 21:41:22.226642 -   [Output]  
+2025-04-06 21:41:22.24496 -   [Output]  
+2025-04-06 21:41:22.264737 -   [Output] Auto-committing changes before exit using gert... 
+2025-04-06 21:41:22.284074 -   [Output] Checking for changes to commit using gert... 
+2025-04-06 21:41:22.302852 -   [Output] Changes detected:  
+2025-04-06 21:41:22.321938 -   [Output] index.qmd 
+2025-04-06 21:41:22.339929 -   [Output] r_task_debug.log 
+2025-04-06 21:41:22.357806 -   [Output] r_task_debug.txt 
+2025-04-06 21:41:22.376536 -   [Output] site_libs/ 
+2025-04-06 21:41:22.392777 -   [Output] Adding changes... 
+2025-04-06 21:41:22.408747 -   [Output] Committing changes... 
+2025-04-06 21:41:22.423019 -   [Output] Committed: 1a35fa5 
+2025-04-06 21:41:22.438525 -   [Output] Pushing changes to origin/main... 
+2025-04-06 21:41:22.453575 -   [Output] Looking up https credentials for https://github.com/twentyandchange/CHQ_Report_W-Tba4YQG.git 
+2025-04-06 21:41:22.471049 -   [Output] Transferred 6 of 6 objects...done! 
+2025-04-06 21:41:22.486204 -   [Output] [status] refs/heads/main: unchanged 
+2025-04-06 21:41:22.505367 -   [Output] [updated] e87210fcdc..1a35fa5cc9 refs/remotes/origin/main 
+2025-04-06 21:41:22.525309 -   [Output] Changes successfully committed and pushed via gert. 
+2025-04-06 21:41:22.544251 -   [Output] pandoc  
+2025-04-06 21:41:22.561666 -   [Output]   to: html 
+2025-04-06 21:41:22.579057 -   [Output]   output-file: index.html 
+2025-04-06 21:41:22.598361 -   [Output]   standalone: true 
+2025-04-06 21:41:22.618088 -   [Output]   embed-resources: true 
+2025-04-06 21:41:22.636358 -   [Output]   title-prefix: NOT FOR CIRCULATION 
+2025-04-06 21:41:22.655299 -   [Output]   section-divs: true 
+2025-04-06 21:41:22.674669 -   [Output]   html-math-method: mathjax 
+2025-04-06 21:41:22.694607 -   [Output]   wrap: none 
+2025-04-06 21:41:22.714707 -   [Output]   default-image-extension: png 
+2025-04-06 21:41:22.733433 -   [Output]    
+2025-04-06 21:41:22.752601 -   [Output] metadata 
+2025-04-06 21:41:22.771514 -   [Output]   document-css: false 
+2025-04-06 21:41:22.790694 -   [Output]   link-citations: true 
+2025-04-06 21:41:22.809952 -   [Output]   date-format: long 
+2025-04-06 21:41:22.830291 -   [Output]   lang: en 
+2025-04-06 21:41:22.849839 -   [Output]   title: The CHQ Drug Report 
+2025-04-06 21:41:22.869815 -   [Output]   editor: visual 
+2025-04-06 21:41:22.889359 -   [Output]    
+2025-04-06 21:41:22.909614 -   [Output] Output created: _site\index.html 
+2025-04-06 21:41:22.925004 -   [Output]  
+2025-04-06 21:41:22.940815 - Checking if expected output exists at "_site/index.html" : TRUE 
+2025-04-06 21:41:22.957266 - Found 'Output created:' message in Quarto output: TRUE 
+2025-04-06 21:41:23.000009 - Quarto render succeeded based on output file existence and success message. 
+2025-04-06 21:41:23.016287 - Starting Git operations... 
+2025-04-06 21:41:23.033283 - Checking Git status... 
+2025-04-06 21:41:23.71178 - git_status completed. Found changes: 21 
+2025-04-06 21:41:23.730255 - Files matching expected output found in status: _site/index.html 
+2025-04-06 21:41:23.74993 - Attempting git_add for: _site/index.html 
+2025-04-06 21:41:24.033265 - git_add completed. 
+2025-04-06 21:41:24.046987 - Attempting git_commit... 
+2025-04-06 21:41:24.29997 - git_commit completed. 
+2025-04-06 21:41:24.314865 - Attempting git_push to origin / main ... 
+2025-04-06 21:41:26.040753 - git_push call completed. 
+2025-04-06 21:41:26.054377 - --- R SCRIPT FINISHED SUCCESSFULLY --- 
