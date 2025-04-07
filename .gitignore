@@ -1,11 +1,3 @@
-# R / renv
-renv/
-.Rproj.user/
-.Rhistory
-.RData
-.Ruserdata/
-
-
 
 # Logs
 *.log
@@ -18,3 +10,5 @@ Thumbs.db
 # Excel temp files (optional)
 ~*.xlsx
 
+
+/.quarto/
