@@ -66,16 +66,14 @@ source("renv/activate.R")
 auto_commit <- auto_commit_gert
 
 # Setup the exit hook (use with caution)
-.Last.sys <- function() {
-  # Check if the gert package is available before trying to use it
-  # Ensures .Last.sys doesn't fail if gert isn't installed somehow
-  if (requireNamespace("gert", quietly = TRUE)) {
-    message("\nAuto-committing changes before exit using gert...")
-    auto_commit() # This now calls the gert version
-  } else {
-    message("\n'gert' package not available. Skipping auto-commit on exit.")
-  }
-}
+# .Last.sys <- function() {
+#   if (requireNamespace("gert", quietly = TRUE)) {
+#     message("\nAuto-committing changes before exit using gert...")
+#     auto_commit() # This now calls the gert version
+#   } else {
+#     message("\n'gert' package not available. Skipping auto-commit on exit.")
+#   }
+# }
 
 # Optional hooks (use cautiously)
 # setHook("plot.new", function() { auto_commit() })

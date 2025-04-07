@@ -11,13 +11,15 @@ _freeze/
 
 # Logs
 *.log
-r_task_debug.txt 
+r_task_debug.txt
 
 # OS files
 .DS_Store
 Thumbs.db
 
 # Excel temp files (optional)
-~*.xlsx 
+~*.xlsx
 
 # Add other project-specific temp/output files if necessary
+
+/.quarto/
