@@ -41,7 +41,7 @@ log_message(paste(".libPaths():", paste(.libPaths(), collapse="; "))) # Check li
 # --- Configuration ---
 repo_dir <- "E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG" # Double-check this path is correct!
 qmd_file <- "index.qmd" 
-output_files <- "index.html" 
+output_files <- "_site/index.html" 
 commit_message <- paste("Automated render and update:", Sys.time())
 remote_name <- "origin" 
 branch_name <- "main"   
