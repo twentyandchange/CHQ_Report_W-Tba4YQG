@@ -3,7 +3,7 @@ project:
   output-dir: _site
   
 website:
-  title: "NOT FOR CIRCULATION"
+  title: "NOT FOR CIRCULATION - TEST"
   navbar:
     left:
       - href: index.qmd
