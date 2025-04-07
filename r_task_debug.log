@@ -125,3 +125,21 @@
 2025-04-06 21:32:49.610303 - Attempting git_push to origin / main ... 
 2025-04-06 21:32:51.335632 - git_push call completed. 
 2025-04-06 21:32:51.349041 - --- R SCRIPT FINISHED SUCCESSFULLY --- 
+2025-04-06 21:41:09.055664 - Quarto directory found at: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:41:09.12869 - Set QUARTO_PATH environment variable to: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:41:09.14804 - Added Quarto directory to PATH environment variable 
+2025-04-06 21:41:09.169004 - --- R SCRIPT STARTED --- 
+2025-04-06 21:41:09.187347 - Running as user: stevek 
+2025-04-06 21:41:09.206576 - Initial working directory: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:41:09.227894 - .libPaths(): E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/renv/library/windows/R-4.4/x86_64-w64-mingw32; C:/Users/stevek/AppData/Local/R/cache/R/renv/sandbox/windows/R-4.4/x86_64-w64-mingw32/ec8042e2 
+2025-04-06 21:41:09.249157 - Repository directory configured: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:41:09.268338 - Quarto file configured: index.qmd 
+2025-04-06 21:41:09.28799 - Expected output file(s): "_site/index.html" 
+2025-04-06 21:41:09.30783 - Loading gert package... 
+2025-04-06 21:41:09.326562 - gert package loaded. 
+2025-04-06 21:41:09.365649 - Attempting to setwd to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:41:09.38666 - Working directory AFTER setwd: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:41:09.408381 - Attempting test write to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/permission_test_delete_me.txt 
+2025-04-06 21:41:09.430197 - Test write SUCCESSFUL. 
+2025-04-06 21:41:09.450042 - Using Quarto executable at: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-04-06 21:41:09.46976 - Attempting Quarto render via system2 using: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
