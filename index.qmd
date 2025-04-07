@@ -12,7 +12,7 @@ execute:
   message: false
 ---
 
-#### A summary compilation of reported drug-related arrests and of possible overdose EMS dispatches over the past 7 days.
+#### A summary compilation of drug-related arrests and possible overdoses over the past 7 days.
 
 ## Week ending `r Sys.Date()`
 
