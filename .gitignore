@@ -1,6 +1,23 @@
-.Rproj.user
+# R / renv
+renv/
+.Rproj.user/
 .Rhistory
 .RData
-.Ruserdata
+.Ruserdata/
 
-/.quarto/
+# Quarto Output / Cache (Let GitHub Action handle _site)
+_site/
+_freeze/
+
+# Logs
+*.log
+r_task_debug.txt 
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Excel temp files (optional)
+~*.xlsx 
+
+# Add other project-specific temp/output files if necessary
