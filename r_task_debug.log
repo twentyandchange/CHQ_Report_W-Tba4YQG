@@ -1,0 +1,127 @@
+2025-04-06 21:11:54.152582 - Quarto directory found at: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:11:54.223202 - Set QUARTO_PATH environment variable to: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:11:54.238441 - --- R SCRIPT STARTED --- 
+2025-04-06 21:11:54.254216 - Running as user: stevek 
+2025-04-06 21:11:54.269841 - Initial working directory: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:11:54.28629 - .libPaths(): E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/renv/library/windows/R-4.4/x86_64-w64-mingw32; C:/Users/stevek/AppData/Local/R/cache/R/renv/sandbox/windows/R-4.4/x86_64-w64-mingw32/ec8042e2 
+2025-04-06 21:11:54.304415 - Repository directory configured: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:11:54.322513 - Quarto file configured: index.qmd 
+2025-04-06 21:11:54.339198 - Expected output file(s): "_site/index.html" 
+2025-04-06 21:11:54.3565 - Loading gert package... 
+2025-04-06 21:11:54.375938 - gert package loaded. 
+2025-04-06 21:11:54.409568 - Attempting to setwd to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:11:54.42691 - Working directory AFTER setwd: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:11:54.443999 - Attempting test write to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/permission_test_delete_me.txt 
+2025-04-06 21:11:54.466991 - Test write SUCCESSFUL. 
+2025-04-06 21:11:54.490181 - Checking Quarto path via Sys.which('quarto') before render: NOT FOUND 
+2025-04-06 21:11:54.508068 - !!! SCRIPT FAILED: Quarto executable not found via Sys.which(). Check QUARTO_PATH setup. 
+2025-04-06 21:17:26.808812 - Quarto directory found at: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:17:26.880524 - Set QUARTO_PATH environment variable to: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:17:26.896051 - --- R SCRIPT STARTED --- 
+2025-04-06 21:17:26.914208 - Running as user: stevek 
+2025-04-06 21:17:26.932252 - Initial working directory: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:17:26.953003 - .libPaths(): E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/renv/library/windows/R-4.4/x86_64-w64-mingw32; C:/Users/stevek/AppData/Local/R/cache/R/renv/sandbox/windows/R-4.4/x86_64-w64-mingw32/ec8042e2 
+2025-04-06 21:17:26.973707 - Repository directory configured: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:17:26.993084 - Quarto file configured: index.qmd 
+2025-04-06 21:17:27.01084 - Expected output file(s): "_site/index.html" 
+2025-04-06 21:17:27.028867 - Loading gert package... 
+2025-04-06 21:17:27.047269 - gert package loaded. 
+2025-04-06 21:17:27.081608 - Attempting to setwd to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:17:27.100786 - Working directory AFTER setwd: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:17:27.118607 - Attempting test write to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/permission_test_delete_me.txt 
+2025-04-06 21:17:27.140291 - Test write SUCCESSFUL. 
+2025-04-06 21:17:27.162239 - Checking Quarto path via Sys.which('quarto') before render: NOT FOUND 
+2025-04-06 21:17:27.17689 - !!! SCRIPT FAILED: Quarto executable not found via Sys.which(). Check QUARTO_PATH setup. 
+2025-04-06 21:29:55.873386 - Quarto directory found at: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:29:55.945742 - Set QUARTO_PATH environment variable to: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:29:55.962488 - Added Quarto directory to PATH environment variable 
+2025-04-06 21:29:55.983551 - --- R SCRIPT STARTED --- 
+2025-04-06 21:29:56.000911 - Running as user: stevek 
+2025-04-06 21:29:56.018536 - Initial working directory: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:29:56.037433 - .libPaths(): E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/renv/library/windows/R-4.4/x86_64-w64-mingw32; C:/Users/stevek/AppData/Local/R/cache/R/renv/sandbox/windows/R-4.4/x86_64-w64-mingw32/ec8042e2 
+2025-04-06 21:29:56.057929 - Repository directory configured: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:29:56.076357 - Quarto file configured: index.qmd 
+2025-04-06 21:29:56.094075 - Expected output file(s): "_site/index.html" 
+2025-04-06 21:29:56.111215 - Loading gert package... 
+2025-04-06 21:29:56.1289 - gert package loaded. 
+2025-04-06 21:29:56.163193 - Attempting to setwd to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:29:56.182053 - Working directory AFTER setwd: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:29:56.200974 - Attempting test write to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/permission_test_delete_me.txt 
+2025-04-06 21:29:56.224042 - Test write SUCCESSFUL. 
+2025-04-06 21:29:56.243698 - Using Quarto executable at: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-04-06 21:29:56.263181 - Attempting Quarto render via system2 using: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-04-06 21:29:59.211317 - Quarto CLI exit status: NULL (execution failed?) 
+2025-04-06 21:29:59.22663 - Quarto CLI stdout/stderr: 
+2025-04-06 21:29:59.247081 -   [Output] pandoc  
+2025-04-06 21:29:59.264415 -   [Output]   to: html 
+2025-04-06 21:29:59.282728 -   [Output]   output-file: index.html 
+2025-04-06 21:29:59.301286 -   [Output]   standalone: true 
+2025-04-06 21:29:59.318763 -   [Output]   title-prefix: NOT FOR CIRCULATION 
+2025-04-06 21:29:59.33793 -   [Output]   section-divs: true 
+2025-04-06 21:29:59.355733 -   [Output]   html-math-method: mathjax 
+2025-04-06 21:29:59.373221 -   [Output]   wrap: none 
+2025-04-06 21:29:59.390388 -   [Output]   default-image-extension: png 
+2025-04-06 21:29:59.409014 -   [Output]    
+2025-04-06 21:29:59.427206 -   [Output] metadata 
+2025-04-06 21:29:59.444618 -   [Output]   document-css: false 
+2025-04-06 21:29:59.462425 -   [Output]   link-citations: true 
+2025-04-06 21:29:59.481087 -   [Output]   date-format: long 
+2025-04-06 21:29:59.499015 -   [Output]   lang: en 
+2025-04-06 21:29:59.517771 -   [Output]   title: Minimal Test 
+2025-04-06 21:29:59.534793 -   [Output]    
+2025-04-06 21:29:59.552672 -   [Output] Output created: _site\index.html 
+2025-04-06 21:29:59.570044 -   [Output]  
+2025-04-06 21:29:59.588028 - !!! SCRIPT FAILED: Failed to get exit status from Quarto CLI execution (system2 failure or abnormal Quarto exit?). 
+2025-04-06 21:32:44.469797 - Quarto directory found at: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:32:44.509625 - Set QUARTO_PATH environment variable to: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-04-06 21:32:44.525024 - Added Quarto directory to PATH environment variable 
+2025-04-06 21:32:44.540546 - --- R SCRIPT STARTED --- 
+2025-04-06 21:32:44.556549 - Running as user: stevek 
+2025-04-06 21:32:44.571899 - Initial working directory: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:32:44.588035 - .libPaths(): E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/renv/library/windows/R-4.4/x86_64-w64-mingw32; C:/Users/stevek/AppData/Local/R/cache/R/renv/sandbox/windows/R-4.4/x86_64-w64-mingw32/ec8042e2 
+2025-04-06 21:32:44.610254 - Repository directory configured: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:32:44.632954 - Quarto file configured: index.qmd 
+2025-04-06 21:32:44.650097 - Expected output file(s): "_site/index.html" 
+2025-04-06 21:32:44.668907 - Loading gert package... 
+2025-04-06 21:32:44.732314 - gert package loaded. 
+2025-04-06 21:32:44.77139 - Attempting to setwd to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:32:44.790415 - Working directory AFTER setwd: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-04-06 21:32:44.810705 - Attempting test write to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/permission_test_delete_me.txt 
+2025-04-06 21:32:44.835564 - Test write SUCCESSFUL. 
+2025-04-06 21:32:44.855321 - Using Quarto executable at: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-04-06 21:32:44.874741 - Attempting Quarto render via system2 using: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-04-06 21:32:47.821849 - Quarto CLI exit status: NULL (execution may still have succeeded) 
+2025-04-06 21:32:47.839493 - Quarto CLI stdout/stderr: 
+2025-04-06 21:32:47.857976 -   [Output] pandoc  
+2025-04-06 21:32:47.875556 -   [Output]   to: html 
+2025-04-06 21:32:47.893558 -   [Output]   output-file: index.html 
+2025-04-06 21:32:47.913194 -   [Output]   standalone: true 
+2025-04-06 21:32:47.932125 -   [Output]   title-prefix: NOT FOR CIRCULATION 
+2025-04-06 21:32:47.95069 -   [Output]   section-divs: true 
+2025-04-06 21:32:47.969354 -   [Output]   html-math-method: mathjax 
+2025-04-06 21:32:47.990343 -   [Output]   wrap: none 
+2025-04-06 21:32:48.008795 -   [Output]   default-image-extension: png 
+2025-04-06 21:32:48.026862 -   [Output]    
+2025-04-06 21:32:48.044465 -   [Output] metadata 
+2025-04-06 21:32:48.06342 -   [Output]   document-css: false 
+2025-04-06 21:32:48.080025 -   [Output]   link-citations: true 
+2025-04-06 21:32:48.098526 -   [Output]   date-format: long 
+2025-04-06 21:32:48.115938 -   [Output]   lang: en 
+2025-04-06 21:32:48.134119 -   [Output]   title: Minimal Test 
+2025-04-06 21:32:48.153315 -   [Output]    
+2025-04-06 21:32:48.172893 -   [Output] Output created: _site\index.html 
+2025-04-06 21:32:48.200449 -   [Output]  
+2025-04-06 21:32:48.219247 - Checking if expected output exists at "_site/index.html" : TRUE 
+2025-04-06 21:32:48.238698 - Found 'Output created:' message in Quarto output: TRUE 
+2025-04-06 21:32:48.257143 - Quarto render succeeded based on output file existence and success message. 
+2025-04-06 21:32:48.276121 - Starting Git operations... 
+2025-04-06 21:32:48.293927 - Checking Git status... 
+2025-04-06 21:32:49.059337 - git_status completed. Found changes: 6 
+2025-04-06 21:32:49.075854 - Files matching expected output found in status: _site/index.html 
+2025-04-06 21:32:49.090582 - Attempting git_add for: _site/index.html 
+2025-04-06 21:32:49.374166 - git_add completed. 
+2025-04-06 21:32:49.389096 - Attempting git_commit... 
+2025-04-06 21:32:49.595091 - git_commit completed. 
+2025-04-06 21:32:49.610303 - Attempting git_push to origin / main ... 
+2025-04-06 21:32:51.335632 - git_push call completed. 
+2025-04-06 21:32:51.349041 - --- R SCRIPT FINISHED SUCCESSFULLY --- 

@@ -40,5 +40,19 @@
     "title": "The CHQ Drug Report",
     "section": "Week ending 2025-04-06",
     "text": "Week ending 2025-04-06"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Minimal Test",
+    "section": "",
+    "text": "This is a minimal test document."
+  },
+  {
+    "objectID": "index.html#test-page",
+    "href": "index.html#test-page",
+    "title": "Minimal Test",
+    "section": "",
+    "text": "This is a minimal test document."
   }
 ]
