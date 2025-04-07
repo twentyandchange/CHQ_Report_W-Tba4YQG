@@ -11,6 +11,27 @@ log_message <- function(msg) {
   try(cat(timestamp_msg, "\n", file = log_file_path, append = TRUE), silent = TRUE) # Write to log file, suppress errors writing the log itself
 }
 
+# --- Add this section after logging setup ---
+# Manually specify the directory containing quarto.exe
+quarto_bin_dir <- "C:/Program Files/RStudio/resources/app/bin/quarto/bin/" 
+
+if (dir.exists(quarto_bin_dir)) {
+  log_message(paste("Quarto directory found at:", quarto_bin_dir))
+  # Set the QUARTO_PATH environment variable (used by the quarto R package)
+  Sys.setenv(QUARTO_PATH = quarto_bin_dir)
+  log_message(paste("Set QUARTO_PATH environment variable to:", Sys.getenv("QUARTO_PATH")))
+  
+  # Optional: Add to R's session PATH too, might help Sys.which
+current_path <- Sys.getenv("PATH")
+Sys.setenv(PATH = paste(quarto_bin_dir, current_path, sep = ";"))
+log_message("Temporarily added Quarto dir to session PATH.")
+  
+} else {
+  log_message(paste("!!! Manually specified Quarto directory not found:", quarto_bin_dir))
+  # Decide if you want to stop if the path is wrong
+stop("Configured Quarto directory not found.") 
+}
+
 # --- Start of Actual Script ---
 log_message("--- R SCRIPT STARTED ---")
 log_message(paste("Running as user:", Sys.info()[["user"]])) # See who R thinks is running
@@ -50,6 +71,12 @@ tryCatch({
   } else {
     log_message("!!! TEST WRITE FAILED !!! Check directory permissions.")
   }
+  
+  # Add checks again right before the call
+  log_message(paste("Checking Quarto path via Sys.getenv('QUARTO_PATH'):", Sys.getenv("QUARTO_PATH")))
+  # Sys.which might work now if you modified the session PATH, or might still fail if relying only on QUARTO_PATH
+  log_message(paste("Checking Quarto path via Sys.which('quarto'):", Sys.which('quarto'))) 
+  log_message("Attempting quarto::quarto_render for index.qmd ...")
   
   # 2. Render the Quarto Document
   log_message(paste("Attempting quarto::quarto_render for", qmd_file, "..."))
