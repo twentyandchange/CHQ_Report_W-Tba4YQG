@@ -10,11 +10,18 @@ warning: false
 execute:
   warning: false
   message: false
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "favicon_1.svg" />
 ---
 
-#### A summary compilation of drug-related arrests and possible overdoses over the past 7 days.
+##### A summary compilation of drug-related arrests and possible overdoses over the past 7 days.
 
 ## Week ending `r Sys.Date()`
+
+------------------------------------------------------------------------
+
+### NOT FOR CIRCULATION
 
 ------------------------------------------------------------------------
 
