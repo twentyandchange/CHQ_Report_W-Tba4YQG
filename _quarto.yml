@@ -3,12 +3,15 @@ project:
   output-dir: _site
   
 website:
-  title: "CHQ Daily Update"
+  title: "CombatAddictionCHQ.com"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "![](County_outline.png){width=75}"
+        href: index.qmd
+#        text: Home
+#      - about.qmd
+#    left:
+#        href: index.qmd
 
 # GitHub Pages specific settings
 execute:

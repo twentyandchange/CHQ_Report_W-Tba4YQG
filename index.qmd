@@ -1,5 +1,5 @@
 ---
-title: "The Q Report"
+title: "The Dashboard"
 format:
   html:
     embed-resources: true
