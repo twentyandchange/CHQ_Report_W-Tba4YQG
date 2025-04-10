@@ -15,7 +15,7 @@
 
 /* Mobile navbar title */
 .navbar-title {
-  font-size: clamp(1.7rem, 4.5vw, 1.75rem);
+  font-size: clamp(1.63rem, 4.5vw, 1.75rem);
   margin-left: 0.5rem;
   white-space: nowrap;
 }
