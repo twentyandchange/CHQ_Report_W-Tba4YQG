@@ -1,5 +1,68 @@
 /* css styles */
 /* styles.css */
+/* Ensure logo visibility */
 .navbar-brand {
-  font-size: 36px; /* Adjust this value as needed - e.g., 24px, large, 1.2rem */
+  display: flex !important;
+  align-items: center;
+}
+
+/* Responsive logo scaling */
+.responsive-logo {
+  width: clamp(40px, 8vw, 75px);
+  height: auto;
+  transition: width 0.3s ease;
+}
+
+/* Mobile navbar title */
+.navbar-title {
+  font-size: clamp(1.7rem, 4.5vw, 1.75rem);
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+/* Desktop adjustments */
+@media (min-width: 768px) {
+  .responsive-logo {
+    width: clamp(60px, 6vw, 85px);
+  }
+  
+  .navbar-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+}
+
+/* Prevent logo/title separation */
+.navbar-brand > .navbar-logo {
+  display: inline-block !important;
+  margin-right: 0.5rem;
+}
+
+/* Hide hamburger menu on mobile */
+.navbar-toggler {
+  display: none !important;
+}
+
+/* Force navbar to remain visible */
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto !important;
+}
+
+/* Ensure navbar items stay visible */
+.navbar-nav {
+  flex-direction: row !important;
+  margin-left: auto;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .navbar-brand {
+    flex: 1;
+    min-width: 200px;
+  }
 }

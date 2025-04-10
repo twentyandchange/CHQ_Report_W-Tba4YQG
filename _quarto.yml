@@ -1,34 +1,31 @@
 project:
   type: website
   output-dir: _site
-  
+
 website:
   title: "The Dashboard"
   search: false
   navbar:
-    left:
-      - text: "![](County_outline.png){width=75}"
-        href: index.qmd
-#        text: Home
-#      - about.qmd
-#    left:
-#        href: index.qmd
-  sidebar:
-    style: "docked"
-    search: false
-    contents:
-      - text: "Arrests"
-        href: "#news"
-      - text: "Possible overdoses"
-        href: "#ods"
+    left:             # 4 spaces indentation
+      - text: "![](County_outline.png){.responsive-logo}"  # 6 spaces indentation
+        href: index.qmd                          # 6 spaces indentation, aligned with text:
+#       html: true
+# text: Home
+# - about.qmd
+# left:
+# href: index.qmd
 
-
-# Add this section to link your CSS file
 format:
   html:
-#    theme: cosmo  # Or your preferred theme, if any. If none, Quarto uses default.
-    css: styles.css # Tells Quarto to include styles.css
+    css: styles.css
+    include-in-header: 
+      - text: |
+          <style>
+            :root {
+              --title-base-size: 2rem;
+              --logo-base-size: 75px;
+            }
+          </style>
 
-# GitHub Pages specific settings
 execute:
   freeze: auto

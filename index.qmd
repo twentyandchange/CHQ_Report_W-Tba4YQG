@@ -15,13 +15,13 @@ include-in-header:
       <link rel = "shortcut icon" href = "favicon_1.svg" />
 ---
 
-### A summary compilation for the week ending `r format(Sys.Date(), "%B %e, %Y")`
-
-------------------------------------------------------------------------
-
 ::: callout-note
 ### NOT FOR CIRCULATION
 :::
+
+------------------------------------------------------------------------
+
+### A summary compilation for the week ending `r format(Sys.Date(), "%B %e, %Y")`
 
 ------------------------------------------------------------------------
 
