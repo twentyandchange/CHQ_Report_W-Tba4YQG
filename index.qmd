@@ -21,7 +21,7 @@ include-in-header:
 
 ------------------------------------------------------------------------
 
-### A summary compilation for the week ending `r format(Sys.Date(), "%B %e, %Y")`
+### A summary compilation for the 7 days ending `r format(Sys.Date(), "%B %e, %Y")`
 
 ------------------------------------------------------------------------
 
