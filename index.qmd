@@ -1,5 +1,5 @@
 ---
-title: "The Dashboard"
+title: "Drug-related Arrests and Possible Overdoses"
 format:
   html:
     embed-resources: true
@@ -15,17 +15,17 @@ include-in-header:
       <link rel = "shortcut icon" href = "favicon_1.svg" />
 ---
 
-##### A summary compilation of CHQ drug-related arrests and possible overdoses over the past 7 days.
-
-## Week ending `r Sys.Date()`
+### A summary compilation for the week ending `r format(Sys.Date(), "%B %e, %Y")`
 
 ------------------------------------------------------------------------
 
+::: callout-note
 ### NOT FOR CIRCULATION
+:::
 
 ------------------------------------------------------------------------
 
-## Published news articles:
+## Published news articles: {#news}
 
 ```{r}
 #| echo: false
@@ -60,9 +60,11 @@ cat("</ul>
 ")
 ```
 
+######## *(Note: "\_\_ keyword references (WJTN)" refers to the number of drug-related terms present in that news posting.)*
+
 ------------------------------------------------------------------------
 
-## EMS dispatches - possible overdoses:
+## EMS dispatches - possible overdoses: {#ods}
 
 ```{r}
 #| echo: false

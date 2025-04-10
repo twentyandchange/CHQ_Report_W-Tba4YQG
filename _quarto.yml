@@ -3,7 +3,8 @@ project:
   output-dir: _site
   
 website:
-  title: "CombatAddictionCHQ.com"
+  title: "The Dashboard"
+  search: false
   navbar:
     left:
       - text: "![](County_outline.png){width=75}"
@@ -12,6 +13,21 @@ website:
 #      - about.qmd
 #    left:
 #        href: index.qmd
+  sidebar:
+    style: "docked"
+    search: false
+    contents:
+      - text: "Arrests"
+        href: "#news"
+      - text: "Possible overdoses"
+        href: "#ods"
+
+
+# Add this section to link your CSS file
+format:
+  html:
+#    theme: cosmo  # Or your preferred theme, if any. If none, Quarto uses default.
+    css: styles.css # Tells Quarto to include styles.css
 
 # GitHub Pages specific settings
 execute:

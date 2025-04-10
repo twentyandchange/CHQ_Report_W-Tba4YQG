@@ -1,1 +1,5 @@
 /* css styles */
+/* styles.css */
+.navbar-brand {
+  font-size: 36px; /* Adjust this value as needed - e.g., 24px, large, 1.2rem */
+}
