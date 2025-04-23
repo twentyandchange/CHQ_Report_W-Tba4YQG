@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Drug-related Arrests and Possible Overdoses",
@@ -18,7 +11,7 @@
     "href": "index.html#news",
     "title": "Drug-related Arrests and Possible Overdoses",
     "section": "Published news articles:",
-    "text": "Published news articles:\n\n\n4 keyword references (WJTN)\n\n\nA Beginner’s Guide to Getting Your Green—The Easy Way\n\n\nJamestown Woman Charged with DWI Following Early Morning Traffic Stop\n\n\nBob Natural: Cultivating Community Through Cannabis\n\n\n3 keyword references (WJTN)\n\n\nBuffalo Man Sentenced to Over 11 Years for Armed Drug Trafficking\n\n\nThree Arrested in Salamanca Drug Investigation Following Early Morning Traffic Stop\n\n\n1 keyword references (WJTN)\n\n\nOlean Man Indicted For Role In Jamestown Drug Conspiracy - WRFA-LP 107.9 FM\n\n\n\n(Note: “__ keyword references (WJTN)” refers to the number of drug-related terms present in that news posting.)"
+    "text": "Published news articles:\n\n\n4 keyword references (WJTN)\n\n\nKillbuck Woman Arrested for DWI Following Traffic Stop\n\n\nSinclairville Man Charged with Aggravated DWI Following Traffic Stop in Stockton\n\n\nJamestown Woman Charged with Drug Possession Following Traffic Stop\n\n\nGetzville Man Arrested for DWI After Speeding Stop in Ellicottville\n\n\nFranklinville Woman Arrested for Driving While Impaired by Drugs\n\n\nA Beginner’s Guide to Getting Your Green—The Easy Way\n\n\nJamestown Woman Charged with DWI Following Early Morning Traffic Stop\n\n\nBob Natural: Cultivating Community Through Cannabis\n\n\n3 keyword references (WJTN)\n\n\n1 keyword references (WJTN)\n\n\n\n(Note: “__ keyword references (WJTN)” refers to the number of drug-related terms present in that news posting.)"
   },
   {
     "objectID": "index.html#ods",
@@ -26,5 +19,12 @@
     "title": "Drug-related Arrests and Possible Overdoses",
     "section": "EMS dispatches - possible overdoses:",
     "text": "EMS dispatches - possible overdoses:"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
