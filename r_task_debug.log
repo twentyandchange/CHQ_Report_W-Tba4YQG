@@ -13301,3 +13301,87 @@
 2025-09-18 07:22:02.245486 -    output_points.shx  -  modified 
 2025-09-18 07:22:02.264647 -    r_task_debug.log  -  modified 
 2025-09-18 07:22:02.282882 - Attempting git_add for: .quarto/_freeze/index/execute-results/html.json, .quarto/xref/b9cee0a4, _freeze/index/execute-results/html.json, _site/index.html, _site/search.json, Combined_results.xlsx, output_points.dbf, output_points.shp, output_points.shx, r_task_debug.log 
+2025-09-18 07:22:02.980739 - git_add completed. 
+2025-09-18 07:22:02.997373 - Attempting git_commit... 
+2025-09-18 07:22:04.051649 - git_commit completed. 
+2025-09-18 07:22:04.066282 - Attempting git_push to origin / main ... 
+2025-09-18 07:22:06.420781 - git_push call completed. 
+2025-09-18 07:22:06.435263 - --- R SCRIPT FINISHED SUCCESSFULLY --- 
+2025-09-19 07:21:44.682873 - Quarto directory found at: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-09-19 07:21:44.718735 - Set QUARTO_PATH environment variable to: C:/Program Files/RStudio/resources/app/bin/quarto/bin/ 
+2025-09-19 07:21:44.739623 - Added Quarto directory to PATH environment variable 
+2025-09-19 07:21:44.758943 - --- R SCRIPT STARTED --- 
+2025-09-19 07:21:44.778385 - Running as user: stevek 
+2025-09-19 07:21:44.79792 - Initial working directory: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-09-19 07:21:44.81997 - .libPaths(): E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/renv/library/windows/R-4.5/x86_64-w64-mingw32; C:/Users/stevek/AppData/Local/R/cache/R/renv/sandbox/windows/R-4.5/x86_64-w64-mingw32/17b7eeb5 
+2025-09-19 07:21:44.844077 - Repository directory configured: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-09-19 07:21:44.862544 - Quarto file configured: index.qmd 
+2025-09-19 07:21:44.879292 - Expected output file(s): "_site/index.html" 
+2025-09-19 07:21:44.896813 - Loading gert package... 
+2025-09-19 07:21:44.914924 - gert package loaded. 
+2025-09-19 07:21:44.947922 - Attempting to setwd to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-09-19 07:21:44.965287 - Working directory AFTER setwd: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG 
+2025-09-19 07:21:44.987111 - Attempting test write to: E:/EMS_calls/News_searches/GitHub/CHQ_Report_GitHub_Actions/twentyandchange.github.io/CHQ_Report_W-Tba4YQG/permission_test_delete_me.txt 
+2025-09-19 07:21:45.018182 - Test write SUCCESSFUL. 
+2025-09-19 07:21:45.03885 - Using Quarto executable at: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-09-19 07:21:45.059629 - Attempting Quarto render via system2 using: C:/Program Files/RStudio/resources/app/bin/quarto/bin//quarto.exe 
+2025-09-19 07:21:59.624822 - Quarto CLI exit status: NULL (execution may still have succeeded) 
+2025-09-19 07:21:59.644237 - Quarto CLI stdout/stderr: 
+2025-09-19 07:21:59.665869 -   [Output] Linking to libgit2 v1.7.2, ssh support: YES 
+2025-09-19 07:21:59.686532 -   [Output] Global config: C:\Users\stevek\.gitconfig 
+2025-09-19 07:21:59.706806 -   [Output] System config: C:/Program Files/Git/etc/gitconfig 
+2025-09-19 07:21:59.727777 -   [Output] Default user: twentyandchange <twentyandchange@gmail.com> 
+2025-09-19 07:21:59.749537 -   [Output]  
+2025-09-19 07:21:59.769524 -   [Output]  
+2025-09-19 07:21:59.790111 -   [Output] processing file: index.qmd 
+2025-09-19 07:21:59.809321 -   [Output] 1/7                   
+2025-09-19 07:21:59.831272 -   [Output] 2/7 [unnamed-chunk-1] 
+2025-09-19 07:21:59.851638 -   [Output] 3/7                   
+2025-09-19 07:21:59.874307 -   [Output] 4/7 [unnamed-chunk-2] 
+2025-09-19 07:21:59.895718 -   [Output] 5/7                   
+2025-09-19 07:21:59.915811 -   [Output] 6/7 [unnamed-chunk-3] 
+2025-09-19 07:21:59.936479 -   [Output] 7/7                   
+2025-09-19 07:21:59.956836 -   [Output] output file: index.knit.md 
+2025-09-19 07:21:59.977542 -   [Output]  
+2025-09-19 07:21:59.998484 -   [Output] pandoc  
+2025-09-19 07:22:00.019945 -   [Output]   to: html 
+2025-09-19 07:22:00.038668 -   [Output]   output-file: index.html 
+2025-09-19 07:22:00.058282 -   [Output]   standalone: true 
+2025-09-19 07:22:00.078016 -   [Output]   embed-resources: true 
+2025-09-19 07:22:00.099142 -   [Output]   title-prefix: The Dashboard 
+2025-09-19 07:22:00.119313 -   [Output]   section-divs: true 
+2025-09-19 07:22:00.138858 -   [Output]   html-math-method: mathjax 
+2025-09-19 07:22:00.15836 -   [Output]   wrap: none 
+2025-09-19 07:22:00.176773 -   [Output]   default-image-extension: png 
+2025-09-19 07:22:00.196407 -   [Output]   css: 
+2025-09-19 07:22:00.213963 -   [Output]     - styles.css 
+2025-09-19 07:22:00.233742 -   [Output]   variables: {} 
+2025-09-19 07:22:00.253394 -   [Output]    
+2025-09-19 07:22:00.272221 -   [Output] metadata 
+2025-09-19 07:22:00.290757 -   [Output]   document-css: false 
+2025-09-19 07:22:00.310089 -   [Output]   link-citations: true 
+2025-09-19 07:22:00.330935 -   [Output]   date-format: long 
+2025-09-19 07:22:00.350731 -   [Output]   lang: en 
+2025-09-19 07:22:00.370385 -   [Output]   title: Drug-related Arrests and Possible Overdoses 
+2025-09-19 07:22:00.391623 -   [Output]   editor: visual 
+2025-09-19 07:22:00.41143 -   [Output]    
+2025-09-19 07:22:00.432798 -   [Output] Output created: _site\index.html 
+2025-09-19 07:22:00.452984 -   [Output]  
+2025-09-19 07:22:00.47179 - Checking if expected output exists at "_site/index.html" : TRUE 
+2025-09-19 07:22:00.492073 - Found 'Output created:' message in Quarto output: TRUE 
+2025-09-19 07:22:00.512416 - Quarto render succeeded based on output file existence and success message. 
+2025-09-19 07:22:00.529301 - Starting Git operations... 
+2025-09-19 07:22:00.546609 - Checking Git status... 
+2025-09-19 07:22:02.213802 - git_status completed. Found changes: 10 
+2025-09-19 07:22:02.231149 - All changed files: 
+2025-09-19 07:22:02.251979 -    .quarto/_freeze/index/execute-results/html.json  -  modified 
+2025-09-19 07:22:02.268807 -    .quarto/xref/b9cee0a4  -  modified 
+2025-09-19 07:22:02.285556 -    _freeze/index/execute-results/html.json  -  modified 
+2025-09-19 07:22:02.306751 -    _site/index.html  -  modified 
+2025-09-19 07:22:02.326612 -    _site/search.json  -  modified 
+2025-09-19 07:22:02.345902 -    Combined_results.xlsx  -  modified 
+2025-09-19 07:22:02.367182 -    output_points.dbf  -  modified 
+2025-09-19 07:22:02.386951 -    output_points.shp  -  modified 
+2025-09-19 07:22:02.407214 -    output_points.shx  -  modified 
+2025-09-19 07:22:02.42689 -    r_task_debug.log  -  modified 
+2025-09-19 07:22:02.445922 - Attempting git_add for: .quarto/_freeze/index/execute-results/html.json, .quarto/xref/b9cee0a4, _freeze/index/execute-results/html.json, _site/index.html, _site/search.json, Combined_results.xlsx, output_points.dbf, output_points.shp, output_points.shx, r_task_debug.log 
